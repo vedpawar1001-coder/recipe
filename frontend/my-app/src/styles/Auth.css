@@ -1,0 +1,105 @@
+/* Auth.css */
+
+/* Overall Auth Page */
+.auth-page {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #fff; /* Changed to white */ /* Changed to white */
+  padding: 20px; /* Add some padding around the auth page */
+}
+
+/* Auth Form Container */
+.auth-container {
+  background: #ffffff; /* Light background for the form */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-container:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+.auth-container h2 {
+  color: #1e293b; /* Dark color for headings */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8fafc;
+  transition: 0.3s;
+}
+
+.auth-container input:focus {
+  border-color: #0f172a; /* Dark color on focus */
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(15, 23, 42, 0.2);
+}
+
+/* Buttons */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0f172a; /* Dark background for button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.auth-container button:hover {
+  background: #1e293b; /* Darker background on hover */
+  box-shadow: 0px 4px 8px rgba(15, 23, 42, 0.3);
+}
+
+/* Links */
+.auth-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-container a {
+  color: #0f172a; /* Dark color for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+  color: #1e293b;
+}
+
+/* Forgot Password */
+.auth-container .forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px;
+  }
+}

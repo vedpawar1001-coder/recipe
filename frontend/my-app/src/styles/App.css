@@ -1,0 +1,83 @@
+/* App.css */
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Light background for overall app */
+}
+
+/* Navbar */
+/* No change to the navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff6f61, #ff914d);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-button {
+  background-color: white;
+  color: #ff6f61;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #ff914d;
+  color: white;
+  transform: scale(1.05);
+}
+/* Forgot Password Button */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  color: #ffe0b2;
+}
+
+/* Container for Main Content */
+.content-container {
+  margin-top: 60px; /* Adjusted to match navbar height */
+  padding: 20px;
+}
